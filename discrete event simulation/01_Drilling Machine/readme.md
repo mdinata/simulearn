@@ -34,3 +34,7 @@ The model runs for 20 minutes and the following system performance indicators ar
 
 
 FEG
+
+
+### Model
+![Screenshot](Screenshot.png)
