@@ -1,0 +1,110 @@
+{UTF-8}
+coffee temperature= INTEG (
+	-cooling,
+		100)
+	~	celcius
+	~		|
+
+cooling=
+	discrepancy*0.1
+	~	celcius
+	~		|
+
+discrepancy=
+	coffee temperature-room temperature
+	~	celcius
+	~		|
+
+room temperature=
+	20
+	~	celcius
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Simulation Control Parameters
+	|
+
+FINAL TIME  = 8
+	~	Minute
+	~	The final time for the simulation.
+	|
+
+INITIAL TIME  = 0
+	~	Minute
+	~	The initial time for the simulation.
+	|
+
+SAVEPER  = 
+        TIME STEP
+	~	Minute [0,?]
+	~	The frequency with which output is stored.
+	|
+
+TIME STEP  = 1
+	~	Minute [0,?]
+	~	The time step for the simulation.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 1
+$-1--1--1,0,|12||-1--1--1|-1--1--1|-1--1--1|-1--1--1|-1--1--1|96,96,100,0
+10,1,coffee temperature,356,142,53,23,3,3,0,0,-1,0,0,0,0,0,0,0,0,0
+12,2,48,637,142,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,3,5,1,100,0,0,22,0,192,0,-1--1--1,,1|(460,142)|
+1,4,5,2,4,0,0,22,0,192,0,-1--1--1,,1|(575,142)|
+11,5,0,518,142,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,6,cooling,518,173,43,23,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,7,discrepancy,381,323,53,23,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,8,7,5,1,0,0,0,0,192,0,-1--1--1,,1|(533,338)|
+10,9,room temperature,424,245,53,23,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,10,9,7,1,0,0,0,0,192,0,-1--1--1,,1|(395,254)|
+1,11,1,7,1,0,0,0,0,192,0,-1--1--1,,1|(321,238)|
+12,12,0,999,194,302,157,8,79,0,0,2,0,0,0,0,0,0,0,0,0
+coffee temperature,Graph
+///---\\\
+:L<%^E!@
+1:test100.vdfx
+1:test60.vdfx
+1:test80.vdfx
+1:current.vdfx
+4:Time
+5:coffee temperature
+9:test100
+19:100,0
+24:0
+25:8
+26:8
+23:0
+15:0,0,0,0,0,0
+27:0,
+34:0,
+42:1
+72:0
+73:0
+35:Date
+36:YYYY-MM-DD
+37:2000
+38:1
+39:1
+40:6
+41:0
+95:0
+96:0
+97:0
+77:0
+78:0
+102:1
+93:0
+94:0
+92:0
+91:0
+90:0
+87:0
+75:
+43:
+103:8,8,8,3,8
+105:0,0,0,0,0,0,0,0,0,0
+104:Courier|12||0-0-0|0-0-0|-1--1--1|0-0-255|192-192-192|-1--1--1
